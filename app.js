@@ -14,13 +14,25 @@ function power(base, exp) {
 * write a function called logArr that will log each item in an array
 */
 
+function logArr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+  return
+}
+
+
 /**
     Fill in the necessary parts of the findById function below
 */
 var users = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'Peter' }, { id: 17, name: 'St. MaryLou de la playa carmen' }, { id: 51, name: 'Doug' }, { id: 881, name: 'Paul' }, { id: 0, name: 'Jon' }, { id: 999, name: 'Timma' }]
 
 function findById(id) {
-
+  let user = findById(users[id])
+  if (!user[id]) {
+    return 'Sorry that user id could not be found'
+  }
+  return user
 }
 findById(17) //Should return {id: 17, name: 'St. MaryLou de la playa carmen'}
 findById(1000) //Should return 4 {error: 'Sorry that user id could not be found'} ****Upshift Challenge
