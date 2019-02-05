@@ -43,7 +43,13 @@ findById(1000) //Should return 4 {error: 'Sorry that user id could not be found'
 
 function bandMem(name) {
   let out = ''
-
+  for (const key in theBand) {
+    let member = theBand[key]
+    if (member.name == name) {
+      out = `${member.name} is in the band and plays the ${member.instrument}`
+    }
+  }
+  return out
 }
 
 var theBand = {
