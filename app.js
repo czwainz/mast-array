@@ -42,6 +42,7 @@ findById(1000) //Should return 4 {error: 'Sorry that user id could not be found'
 // [band-members-name] is in the band and plays the [band-members-instrument];
 
 function bandMem(name) {
+  let out = ''
 
 }
 
