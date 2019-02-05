@@ -48,6 +48,7 @@ function bandMem(name) {
     if (member.name == name) {
       out = `${member.name} is in the band and plays the ${member.instrument}`
     }
+
   }
   return out
 }
