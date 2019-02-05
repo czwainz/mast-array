@@ -68,6 +68,10 @@ var theBand = {
 
 //write a fn that accepts two arguments a (sentence, letter) have the function return the number of times that letter repeats in the sentence
 
+function letterRepeat(sentance, letter) {
+
+
+}
 
 //write a fn called pythagorean(a,b) have it return the value of c^2
 
